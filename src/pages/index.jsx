@@ -1,12 +1,16 @@
 import * as React from 'react'
 
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
-const IndexPage = () => (
-  <>
-  </>
-)
+export default function IndexPage() {
+  return (
+    <>
+    </>
+  )
+}
 
-export const Head = () => <SEO title="" description="" />
-
-export default IndexPage
+export const Head = () => {
+  return (
+    <Seo title="" description="" />
+  )
+}
