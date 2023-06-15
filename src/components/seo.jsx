@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-function SEO({ title, children, description }) {
+export default function Seo({ title, children, description }) {
   return (
     <>
       <title>{ title }</title>
@@ -12,5 +12,3 @@ function SEO({ title, children, description }) {
     </>
   )
 }
-
-export default SEO

@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Isaac Sánchez <isaacsancheza@outlook.com>",
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
+    "@tailwindcss/container-queries": "^0.1.1",
     "gatsby": "^5.10.0",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-manifest": "^5.10.0",
@@ -15,6 +18,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "gatsby-plugin-postcss": "^6.10.0",
     "postcss": "^8.4.24",
@@ -28,10 +34,10 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean"
   },
   "repository": {
