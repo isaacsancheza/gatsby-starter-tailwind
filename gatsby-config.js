@@ -16,5 +16,37 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          }
+        },
+        createLinkInHead: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-tailwind`,
+        short_name: `starter`,
+        start_url: `/`,
+        icon: `src/images/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [
+          {
+            allow: '/',
+            userAgent: '*', 
+          },
+        ]
+      },
+    },
   ],
 }
