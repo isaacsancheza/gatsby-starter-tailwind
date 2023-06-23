@@ -31,9 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        lang: `es-MX`,
         name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
-        start_url: `/`,
         icon: `src/images/favicon.png`,
       },
     },
