@@ -9,8 +9,12 @@ export default function IndexPage() {
   )
 }
 
-export const Head = () => {
+export const Head = ({location}) => {
   return (
-    <Seo title="" description="" />
+    <Seo 
+      title=""
+      description=""
+      pagePath={location.pathname}
+    />
   )
 }
