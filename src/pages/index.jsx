@@ -23,12 +23,12 @@ export const Head = ({data, location}) => {
 }
 
 export const query =  graphql`
-query {
-  site {
-    siteMetadata {
-      title
-      description
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
     }
   }
-}
 `
