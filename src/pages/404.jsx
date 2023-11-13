@@ -15,5 +15,6 @@ export const Head = ({location}) => {
         title="Página no encontrada" 
         description="Perdón, no encontramos la página que buscabas."
         pagePath={location.pathname}
+     />
   )
 }
